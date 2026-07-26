@@ -181,7 +181,7 @@
       "length": "30+ min",
       "isNew": true,
       "isAdult": true
-    }
+    },
     {
       "title": "Yahtzee",
       "url": "https://yahtzee-yzem.onrender.com",
@@ -190,6 +190,17 @@
       "tags": ["party", "dice game"],
       "players": "2+ players",
       "length": "30+ min",
+      "isNew": true,
+      "isAdult": false
+    },
+    {
+      "title": "Hearts",
+      "url": "https://hearts-5lgx.onrender.com",
+      "description": "A classic trick-taking card game where you pass the trash and dodge the points. Avoid hearts, steer clear of the Queen of Spades, and try to stick your opponents with the bad cards instead.",
+      "thumbnail": "./thumbs/Hearts.png",
+      "tags": ["card game", "trick-taking"],
+      "players": "4 players",
+      "length": "20+ min",
       "isNew": true,
       "isAdult": false
     }

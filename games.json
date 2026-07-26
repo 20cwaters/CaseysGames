@@ -203,6 +203,28 @@
       "length": "20+ min",
       "isNew": true,
       "isAdult": false
+    },
+    {
+      "title": "Loaded Questions",
+      "url": "https://loadedquestions.onrender.com",
+      "description": "A hilarious party game about how well you know each other. Answer quirky, revealing questions, then guess who wrote which answer.",
+      "thumbnail": "./thumbs/LoadedQuestions.png",
+      "tags": ["party", "trivia"],
+      "players": "3+ players",
+      "length": "30+ min",
+      "isNew": true,
+      "isAdult": false
+    },
+    {
+      "title": "Balderdash",
+      "url": "https://balderdash.onrender.com",
+      "description": "A bluffing game of made-up definitions. Invent a convincing fake meaning for obscure words and try to fool your friends into picking it over the real thing.",
+      "thumbnail": "./thumbs/Balderdash.png",
+      "tags": ["party", "bluffing"],
+      "players": "3+ players",
+      "length": "30+ min",
+      "isNew": true,
+      "isAdult": false
     }
   ]
 }

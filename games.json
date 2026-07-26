@@ -182,5 +182,16 @@
       "isNew": true,
       "isAdult": true
     }
+    {
+      "title": "Yahtzee",
+      "url": "https://yahtzee-yzem.onrender.com",
+      "description": "The classic dice game of luck and strategy. Roll, reroll, and lock in the best combination you can before your turn runs out.",
+      "thumbnail": "./thumbs/Yahtzee.png",
+      "tags": ["party", "dice game"],
+      "players": "2+ players",
+      "length": "30+ min",
+      "isNew": true,
+      "isAdult": false
+    }
   ]
 }

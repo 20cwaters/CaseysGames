@@ -1,0 +1,186 @@
+{
+  "games": [
+    {
+      "title": "Secret Hitler",
+      "url": "https://secret-hitler-btwl.onrender.com",
+      "description": "A social deduction game of political intrigue. Liberals must find and stop the Secret Hitler before it's too late.",
+      "thumbnail": "./thumbs/SecretHitler.png",
+      "tags": ["party", "social deduction"],
+      "players": "5–10 players",
+      "length": "30–45 min",
+      "isNew": false
+    },
+    {
+      "title": "Code Names",
+      "url": "https://codenames-azw8.onrender.com",
+      "description": "Two teams race to find their agents using one-word clues from their spymaster. Careful — one wrong guess could end it all.",
+      "thumbnail": "./thumbs/CodeNames.png",
+      "tags": ["party", "word game"],
+      "players": "4+ players",
+      "length": "15–30 min",
+      "isNew": false
+    },
+    {
+      "title": "Ticket To Ride",
+      "url": "https://tickettoride.onrender.com",
+      "description": "A cross-country race to claim train routes and complete your secret destination tickets first.",
+      "thumbnail": "./thumbs/TicketToRide.png",
+      "tags": ["strategy", "board game", "route building"],
+      "players": "2–5 players",
+      "length": "30–60 min",
+      "isNew": false
+    },
+    {
+      "title": "Family Feud",
+      "url": "https://family-feud-whlj.onrender.com",
+      "description": "Survey says! Team up, buzz in on your phones, and guess the top answers on the big board before you strike out.",
+      "thumbnail": "./thumbs/FamilyFeud.png",
+      "tags": ["party", "game show"],
+      "players": "4+ players",
+      "length": "20–45 min",
+      "isNew": false
+    },
+    {
+      "title": "Coup",
+      "url": "https://coup-00sx.onrender.com",
+      "description": "Bluff, challenge, and eliminate your way to the throne. Claim characters you don't have, call out liars, and be the last influence standing.",
+      "thumbnail": "./thumbs/Coup.png",
+      "tags": ["party", "bluffing", "strategy"],
+      "players": "3–6 players",
+      "length": "15–30 min",
+      "isNew": false
+    },
+    {
+      "title": "Quixx",
+      "url": "https://qwixx.onrender.com",
+      "description": "A fast-paced dice game. Lock in the best combinations across four colored rows before the dice turn against you.",
+      "thumbnail": "./thumbs/Quixx.png",
+      "tags": ["strategy", "dice game"],
+      "players": "2–5 players",
+      "length": "15 min",
+      "isNew": false
+    },
+    {
+      "title": "Wavelength",
+      "url": "https://wavelength-kkis.onrender.com/",
+      "description": "A mind-reading party game. Give a clue to steer your team toward the secret spot on the dial — the closer you land, the more you score.",
+      "thumbnail": "./thumbs/Wavelength.png",
+      "tags": ["party", "guessing game"],
+      "players": "3+ players",
+      "length": "30–45 min",
+      "isNew": false
+    },
+    {
+      "title": "Catan",
+      "url": "https://catan-duax.onrender.com",
+      "description": "Trade resources, build roads and settlements, and race to 10 points on the island of Catan.",
+      "thumbnail": "./thumbs/Catan.png",
+      "tags": ["strategy", "board game"],
+      "players": "3–4 players",
+      "length": "60–90 min",
+      "isNew": false
+    },
+    {
+      "title": "Cover Your Assets",
+      "url": "https://coveryourassets.onrender.com",
+      "description": "Collect sets of matching cards, then swap and steal your way to the biggest stash before anyone else covers theirs.",
+      "thumbnail": "./thumbs/CoverYourAssets.png",
+      "tags": ["party", "card game"],
+      "players": "3–5 players",
+      "length": "20–30 min",
+      "isNew": false
+    },
+    {
+      "title": "Skull King",
+      "url": "https://skullking-16z6.onrender.com",
+      "description": "A pirate-themed trick-taking game. Bid on how many tricks you'll win each round, then sail as close to your prediction as you can.",
+      "thumbnail": "./thumbs/SkullKing.png",
+      "tags": ["strategy", "card game", "trick-taking"],
+      "players": "2–8 players",
+      "length": "30–45 min",
+      "isNew": true
+    },
+    {
+      "title": "Exploding Kittens",
+      "url": "https://explodingkittens-oikk.onrender.com",
+      "description": "A card game of kitty combat. Draw cards, avoid the exploding kitten, and use your hand to sabotage everyone else's odds.",
+      "thumbnail": "./thumbs/ExplodingKittens.png",
+      "tags": ["party", "card game"],
+      "players": "2–5 players",
+      "length": "15 min",
+      "isNew": true
+    },
+    {
+      "title": "Boggle",
+      "url": "https://boggle-3ulc.onrender.com",
+      "description": "Shake the grid and race the clock to find as many hidden words as you can before time runs out.",
+      "thumbnail": "./thumbs/Boggle.png",
+      "tags": ["word game", "strategy"],
+      "players": "2+ players",
+      "length": "10–15 min",
+      "isNew": true
+    },
+    {
+      "title": "Bananagrams",
+      "url": "https://bannanagrams.onrender.com",
+      "description": "A speedy word-building game. Race to build your own crossword grid before anyone else uses up all the tiles.",
+      "thumbnail": "./thumbs/Bannanagrams.png",
+      "tags": ["word game", "party"],
+      "players": "2–8 players",
+      "length": "15 min",
+      "isNew": true
+    },
+    {
+      "title": "Scattergories",
+      "url": "https://scattergories-x4zn.onrender.com",
+      "description": "Beat the clock and your opponents by naming an item in each category that starts with the same letter — no repeats allowed.",
+      "thumbnail": "./thumbs/Scattergories.png",
+      "tags": ["word game", "party"],
+      "players": "2–6 players",
+      "length": "20–30 min",
+      "isNew": true
+    },
+    {
+      "title": "Farkle",
+      "url": "https://farkle-t9ex.onrender.com/",
+      "description": "A push-your-luck dice game. Bank your points each turn or roll again for more — bust, and you lose it all.",
+      "thumbnail": "./thumbs/Farkle.png",
+      "tags": ["strategy", "dice game"],
+      "players": "2+ players",
+      "length": "20–30 min",
+      "isNew": true
+    },
+    {
+      "title": "Flip 7",
+      "url": "https://flipseven.onrender.com",
+      "description": "A push-your-luck card game. Flip cards to build the biggest total without busting — collect seven uniques and score big.",
+      "thumbnail": "./thumbs/FlipSeven.png",
+      "tags": ["strategy", "card game"],
+      "players": "3–18 players",
+      "length": "15–20 min",
+      "isNew": true
+    },
+    {
+      "title": "Cards Against Humanity",
+      "url": "https://cardsagainsthumanity-9awl.onrender.com",
+      "description": "A horribly offensive party game. Fill in the blank with the worst card in your hand and hope the judge has terrible taste.",
+      "thumbnail": "./thumbs/CardsAgainstHumanity.png",
+      "tags": ["party", "card game"],
+      "players": "4+ players",
+      "length": "30+ min",
+      "isNew": false,
+      "isAdult": true
+    },
+    {
+      "title": "New Phone Who Dis?",
+      "url": "https://new-phone-who-dis-a1er.onrender.com",
+      "description": "A raunchy party game about ridiculous texts. Match the funniest response to the prompt and hope your friends have the same terrible sense of humor.",
+      "thumbnail": "./thumbs/NewPhoneWhoDis.png",
+      "tags": ["party", "card game"],
+      "players": "4+ players",
+      "length": "30+ min",
+      "isNew": true,
+      "isAdult": true
+    }
+  ]
+}

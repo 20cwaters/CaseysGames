@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casey's Games</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="page">
+  <header class="header">
+    <span class="mono brand">CASEYS-GAMES</span>
+    <span class="mono subtle">free · browser · multiplayer</span>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <h1 class="hero-title">Casey's<br><span class="accent">Games</span></h1>
+      <p class="hero-sub">Party games I build and put on the internet. Everything runs in the browser. Bring friends.</p>
+    </div>
+  </section>
+
+  <div class="disclaimer mono">
+    <span class="disclaimer-icon" aria-hidden="true">⚠</span>
+    <span>Heads up — these games are hosted on Render's free tier and <strong>spin down when idle</strong>. First load can take <strong>a minute or two</strong> to wake up. It's not broken, just stretching.</span>
+  </div>
+
+  <main class="main">
+    <div class="index-row">
+      <span class="mono brand">INDEX</span>
+      <span class="rule"></span>
+      <span class="mono subtle" id="game-count">…</span>
+    </div>
+    <div class="tabs mono" role="tablist">
+      <button class="tab-btn active" data-tab="all" role="tab" aria-selected="true">All</button>
+      <button class="tab-btn" data-tab="party" role="tab" aria-selected="false">Party Game</button>
+      <button class="tab-btn" data-tab="card game" role="tab" aria-selected="false">Card Game</button>
+      <button class="tab-btn" data-tab="word game" role="tab" aria-selected="false">Word Game</button>
+      <button class="tab-btn" data-tab="dice game" role="tab" aria-selected="false">Dice Game</button>
+      <button class="tab-btn" data-tab="board game" role="tab" aria-selected="false">Board Game</button>
+      <button class="tab-btn tab-btn-adult" data-tab="adult" role="tab" aria-selected="false">18+ Adult</button>
+    </div>
+    <div class="grid" id="game-grid"></div>
+  </main>
+
+  <div class="adult-gate" id="adult-gate" hidden>
+    <div class="adult-gate-box">
+      <span class="adult-gate-icon" aria-hidden="true">🔞</span>
+      <h3 class="adult-gate-title">Explicit Content Warning</h3>
+      <p class="adult-gate-text">Games in this section contain crude humor, explicit language, and adult themes. Not suitable for minors.</p>
+      <div class="adult-gate-actions">
+        <button class="adult-gate-btn adult-gate-confirm" id="adult-gate-confirm">I'm 18+, Continue</button>
+        <button class="adult-gate-btn adult-gate-cancel" id="adult-gate-cancel">Go Back</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer mono">
+    <span>Built by Casey</span>
+    <span>More games when they're ready</span>
+  </footer>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>

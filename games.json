@@ -225,6 +225,28 @@
       "length": "30+ min",
       "isNew": true,
       "isAdult": false
+    },
+    {
+      "title": "Herd Mentality",
+      "url": "https://herdmentality.onrender.com",
+      "description": "A party game about thinking like the herd. Write down your answer and score points by matching what most of your friends wrote.",
+      "thumbnail": "./thumbs/HerdMentality.png",
+      "tags": ["party", "guessing game"],
+      "players": "4+ players",
+      "length": "20–30 min",
+      "isNew": true,
+      "isAdult": false
+    },
+    {
+      "title": "Scrabble",
+      "url": "https://scrabble-wsvk.onrender.com",
+      "description": "The classic word game. Build words across the board and rack up points on double and triple letter and word scores.",
+      "thumbnail": "./thumbs/Scrabble.png",
+      "tags": ["word game", "board game"],
+      "players": "2–4 players",
+      "length": "60–90 min",
+      "isNew": true,
+      "isAdult": false
     }
   ]
 }

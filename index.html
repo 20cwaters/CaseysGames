@@ -34,16 +34,16 @@
       <span class="rule"></span>
       <span class="mono subtle" id="game-count">…</span>
     </div>
-    <div class="tabs mono" role="tablist">
-      <button class="tab-btn active" data-tab="all" role="tab" aria-selected="true">All</button>
-      <button class="tab-btn" data-tab="party" role="tab" aria-selected="false">Party Game</button>
-      <button class="tab-btn" data-tab="card game" role="tab" aria-selected="false">Card Game</button>
-      <button class="tab-btn" data-tab="word game" role="tab" aria-selected="false">Word Game</button>
-      <button class="tab-btn" data-tab="dice game" role="tab" aria-selected="false">Dice Game</button>
-      <button class="tab-btn" data-tab="board game" role="tab" aria-selected="false">Board Game</button>
-      <button class="tab-btn tab-btn-adult" data-tab="adult" role="tab" aria-selected="false">18+ Adult</button>
+
+    <div class="search-row">
+      <svg class="search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <circle cx="7" cy="7" r="5.5" stroke="currentColor" stroke-width="1.5"/>
+        <line x1="11.2" y1="11.2" x2="15" y2="15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <input type="search" id="search-input" class="search-input mono" placeholder="Search games…" aria-label="Search games" autocomplete="off">
     </div>
-    <div class="grid" id="game-grid"></div>
+
+    <div id="rows-container"></div>
   </main>
 
   <div class="adult-gate" id="adult-gate" hidden>

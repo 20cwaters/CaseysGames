@@ -12,7 +12,8 @@ const CATEGORIES = [
   { key: 'card game', label: 'Card Games' },
   { key: 'word game', label: 'Word Games' },
   { key: 'dice game', label: 'Dice Games' },
-  { key: 'board game', label: 'Board Games' }
+  { key: 'board game', label: 'Board Games' },
+  { key: 'platformer', label: 'Video Games' }
 ];
 
 function initials(title) {
@@ -71,17 +72,44 @@ function rowShell(key, title, countLabel, trackHTML) {
       <div class="row-header">
         <h2 class="row-title">${escapeHTML(title)}</h2>
         <span class="row-count mono">${countLabel}</span>
+        <span class="row-swipe-hint" aria-hidden="true">‹ swipe ›</span>
       </div>
       <div class="row-viewport">
-        <button class="row-nav row-nav-prev" aria-label="Scroll ${escapeAttr(title)} left" type="button">‹</button>
+        <button class="row-nav row-nav-prev" aria-label="Scroll ${escapeAttr(title)} left" type="button"><span class="row-nav-icon">‹</span></button>
         <div class="row-track">${trackHTML}</div>
-        <button class="row-nav row-nav-next" aria-label="Scroll ${escapeAttr(title)} right" type="button">›</button>
+        <button class="row-nav row-nav-next" aria-label="Scroll ${escapeAttr(title)} right" type="button"><span class="row-nav-icon">›</span></button>
       </div>
     </section>
   `;
 }
 
+function wireEasterEgg() {
+  const sequence = ['g', 'a', 'y'];
+  const titleEl = document.getElementById('hero-title');
+  const letters = document.querySelectorAll('.egg-letter');
+  if (!titleEl || !letters.length) return;
+
+  let step = 0;
+
+  letters.forEach((el) => {
+    el.addEventListener('click', () => {
+      const key = el.dataset.egg;
+      if (key === sequence[step]) {
+        step += 1;
+        if (step === sequence.length) {
+          titleEl.innerHTML = 'Tyler is<br><span class="accent">gay</span>';
+          step = 0;
+        }
+      } else {
+        step = key === sequence[0] ? 1 : 0;
+      }
+    });
+  });
+}
+
 async function init() {
+  wireEasterEgg();
+
   const countEl = document.getElementById('game-count');
   const rowsContainer = document.getElementById('rows-container');
   const searchInput = document.getElementById('search-input');
@@ -120,6 +148,12 @@ async function init() {
 
   function renderBrowse() {
     const parts = [];
+
+    const allGames = games.filter((g) => !g.isAdult);
+    if (allGames.length) {
+      const track = allGames.map((g, i) => cardHTML(g, i, 'row-card')).join('');
+      parts.push(rowShell('all', 'All Games', `${allGames.length}${allGames.length === 1 ? ' GAME' : ' GAMES'}`, track));
+    }
 
     const newGames = games.filter((g) => g.isNew && !g.isAdult);
     if (newGames.length) {
@@ -182,16 +216,28 @@ async function init() {
     }
   }
 
+  function updateEdgeState(viewport, track) {
+    const scrollable = track.scrollWidth > track.clientWidth + 4;
+    viewport.classList.toggle('is-scrollable', scrollable);
+    viewport.classList.toggle('is-start', track.scrollLeft <= 4);
+    viewport.classList.toggle('is-end', track.scrollLeft + track.clientWidth >= track.scrollWidth - 4);
+  }
+
   function wireRowNav() {
     rowsContainer.querySelectorAll('.row-viewport').forEach((viewport) => {
       const track = viewport.querySelector('.row-track');
       const prev = viewport.querySelector('.row-nav-prev');
       const next = viewport.querySelector('.row-nav-next');
+      const swipeHint = viewport.parentElement.querySelector('.row-swipe-hint');
       if (!track || !prev || !next) return;
+
+      updateEdgeState(viewport, track);
+      track.addEventListener('scroll', () => updateEdgeState(viewport, track), { passive: true });
 
       if (track.scrollWidth <= track.clientWidth + 4) {
         prev.style.display = 'none';
         next.style.display = 'none';
+        if (swipeHint) swipeHint.style.display = 'none';
         return;
       }
 
